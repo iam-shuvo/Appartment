@@ -1,0 +1,60 @@
+CRITICAL - 2023-10-07 12:52:54 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:01:17 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:01:20 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:01:20 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:01:20 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:01:21 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:01:21 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:39 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:40 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:40 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:41 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:41 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:41 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:41 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:42 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:42 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:42 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:42 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:13:43 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-07 13:16:47 --> Assignments can only happen to writable values
+in APPPATH\Controllers\Home.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

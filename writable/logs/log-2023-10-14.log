@@ -1,0 +1,300 @@
+ERROR - 2023-10-14 18:50:24 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Xampp\htdocs\Appertment\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Xampp\htdocs\Appertment\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_ci_crud', 3306, '', 0)
+#1 D:\Xampp\htdocs\Appertment\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Xampp\htdocs\Appertment\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Xampp\htdocs\Appertment\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Xampp\htdocs\Appertment\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\Xampp\htdocs\Appertment\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 D:\Xampp\htdocs\Appertment\app\Controllers\UserController.php(16): CodeIgniter\BaseModel->paginate(4, 'group')
+#7 D:\Xampp\htdocs\Appertment\system\CodeIgniter.php(919): App\Controllers\UserController->alluser()
+#8 D:\Xampp\htdocs\Appertment\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 D:\Xampp\htdocs\Appertment\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Xampp\htdocs\Appertment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Xampp\htdocs\Appertment\system\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Xampp\htdocs\Appertment\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Xampp\htdocs\Appertment\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Xampp\htdocs\Appertment\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Xampp\htdocs\Appertment\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 D:\Xampp\htdocs\Appertment\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 D:\Xampp\htdocs\Appertment\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 D:\Xampp\htdocs\Appertment\app\Controllers\UserController.php(16): CodeIgniter\BaseModel->paginate(4, 'group')
+#6 D:\Xampp\htdocs\Appertment\system\CodeIgniter.php(919): App\Controllers\UserController->alluser()
+#7 D:\Xampp\htdocs\Appertment\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 D:\Xampp\htdocs\Appertment\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Xampp\htdocs\Appertment\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Xampp\htdocs\Appertment\system\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-10-14 18:50:24 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `user`', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\UserController.php(16): CodeIgniter\BaseModel->paginate(4, 'group')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->alluser()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+INFO - 2023-10-14 18:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 18:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 18:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 18:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-14 18:52:45 --> Undefined array key "pasword"
+in APPPATH\Views\dashboard\page\user\all-user.php on line 36.
+ 1 APPPATH\Views\dashboard\page\user\all-user.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pasword"', 'D:\\Xampp\\htdocs\\Appertment\\app\\Views\\dashboard\\page\\user\\all-user.php', 36)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Xampp\\htdocs\\Appertment\\app\\Views\\dashboard\\page\\user\\all-user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/page/user/all-user', [], true)
+ 5 APPPATH\Controllers\UserController.php(19): view('dashboard/page/user/all-user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->alluser()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+INFO - 2023-10-14 18:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 18:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 18:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 18:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 18:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 18:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 18:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 18:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 19:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-14 19:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-14 19:39:40 --> Invalid file: "dashboard\pagelat_details\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat_details\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat_details\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat_details\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:40:34 --> Invalid file: "dashboard\pagelat_details\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat_details\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat_details\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat_details\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:40:35 --> Invalid file: "dashboard\pagelat_details\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat_details\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat_details\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat_details\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:40:35 --> Invalid file: "dashboard\pagelat_details\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat_details\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat_details\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat_details\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:40:35 --> Invalid file: "dashboard\pagelat_details\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat_details\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat_details\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat_details\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:40:36 --> Invalid file: "dashboard\pagelat_details\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat_details\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat_details\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat_details\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:40:36 --> Invalid file: "dashboard\pagelat_details\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat_details\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat_details\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat_details\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:41:00 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:44:18 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:46:26 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:46:27 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:46:28 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:46:28 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:46:28 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:46:28 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:46:29 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:49:20 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:49:21 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:49:21 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:49:21 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:49:22 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:49:22 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
+CRITICAL - 2023-10-14 19:49:22 --> Invalid file: "dashboard\pagelat\addflat.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard\\pagelat\\addflat.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard\\pagelat\\addflat', [], true)
+ 3 APPPATH\Controllers\FlatController.php(46): view('dashboard\\pagelat\\addflat', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\FlatController->addflat()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FlatController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Xampp\\htdocs\\Appertment\\public\\index.php')
